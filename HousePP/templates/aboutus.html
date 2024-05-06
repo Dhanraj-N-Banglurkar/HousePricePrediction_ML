@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'fontawesomefree/css/all.min.css' %}" type="text/css">
+    <title>ABOUT US PAGE</title>
+</head>
+<body>
+    <header class="header">
+        <h1>RESIR@TE</h1>
+        <nav class="navbar">
+            <a href="{% url 'index'%}">Home</a>
+            <a href="{% url 'ba'%}">Blogs&Articles</a>
+            <a href="{% url 'aboutus'%}">About us</a>
+
+        </nav>
+        <div class="activity">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <button class="btn">
+            <a style="text-decorations:none !important; color:inherit;" href="{% url 'prediction'%}">PREDICT</a>
+        </button>
+    </header>
+
+        <div class="aboutus">
+            <h2>ABOUT US</h2>
+            <hr color="black" >
+            <img src="{% static 'img3.jpg'%}" alt="AN IMAGE OF LOTS OF HOUSES">
+            <p>Welcome to our house price prediction website, where data meets intuition to empower your property decisions. At RESIR@TE, we're driven by the belief that everyone deserves clarity and confidence when navigating the real estate market.</p>
+
+            <p>Our team of experts combines cutting-edge data analytics with a deep understanding of market trends to deliver accurate and reliable price predictions. Whether you're buying, selling, or simply curious about property values, we're here to provide you with the insights you need to make informed decisions.</p>
+
+            <p>With our user-friendly interface and personalized recommendations, navigating the complexities of the housing market has never been easier. Trust [Website Name] to guide you on your journey towards your dream home.</p>
+        </div>
+
+        <div class="about-quote">
+            <h3>"Unlock the future of real estate with the precision of machine learning"</h3>
+            <h4> Predicting house prices isn't just a guess—it's a science, powered by data-driven insights, guiding you towards the home of your dreams.</h4>
+        </div>
+
+        <div class="team">
+            <h2>THE TEAM</h2>
+            <p>At House Price Predictor, we pride ourselves on our dedicated team of professionals who are passionate about providing accurate and insightful predictions for the real estate market in India. Our diverse team consists of experienced data scientists, seasoned real estate analysts, and technology enthusiasts, all working together to deliver reliable forecasts and valuable insights to our users. With a commitment to excellence and a drive for innovation, our team strives to empower individuals and businesses with the knowledge they need to make informed decisions in the dynamic world of real estate."</p>
+            <br>
+            <p>Our dedicated team at House Price Predictor India combines expertise in data analytics, real estate trends, and machine learning to provide accurate and insightful predictions for property prices across India. With a passion for leveraging cutting-edge technology, our team continually refines our models and algorithms to ensure the most reliable forecasts possible. From seasoned real estate professionals to data scientists, our diverse team collaborates seamlessly to deliver valuable insights that empower our users to make informed decisions in the dynamic Indian real estate market."</p>
+        </div>
+
+        <div class="services">
+            <h2>SERVICES</h2>
+            <hr color="black" >
+
+            <div class="block">
+                <div class="block1">
+                    <h4>Title</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vitae dicta fugit porro dolorem quis, incidunt optio voluptatibus nemo necessitatibus perferendis repellendus cupiditate unde soluta esse, delectus nostrum quibusdam explicabo!</p>
+                </div>
+
+                <div class="block2">
+                    <h4>Title</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vitae dicta fugit porro dolorem quis, incidunt optio voluptatibus nemo necessitatibus perferendis repellendus cupiditate unde soluta esse, delectus nostrum quibusdam explicabo!</p>
+                </div>
+
+                <div class="block3">
+                    <h4>Title</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vitae dicta fugit porro dolorem quis, incidunt optio voluptatibus nemo necessitatibus perferendis repellendus cupiditate unde soluta esse, delectus nostrum quibusdam explicabo!</p>
+                </div>
+             </div>
+
+            </div>
+
+            <div class="footer">
+                <h3>Contact Us</h3>
+                <div class="foot">
+                    <h4>Let's discuss your vision with us</h4>
+                    <button>
+                    <a style="text-decorations:none !important; color:inherit;" href="">Let's Talk ></a>
+                    </button>
+<!--                    <button>Let's Talk ></button>-->
+                    <hr color="azure">
+                </div>
+
+                <div class="footer-right">
+                    <div class="address">
+                        <p> 123, ABC Street,</p>
+                        <p> XYZ Nagar,</p>
+                        <p> City Name,</p>
+                        <p> State Name - 123456,</p>
+                        <p> India.</p>
+                    </div>
+
+                    <div class="email">
+                        <p> housepricepredictor.india@gmail.com</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+
+                <div class="base">
+                    <h2>RESIR@TE</h2>
+
+                    <div class="base-elements">
+                        <a href=""></a>
+                        <a href="">About Us</a>
+                        <a href="">Project</a>
+                        <a href="">Services</a>
+                        <a href="">Terms&Conditions</a>
+                    </div>
+
+                    <h3>@RESIR@TE.All Rights Reserved</h3>
+                </div>
+            </div>
+
+
+</body>
+</html>

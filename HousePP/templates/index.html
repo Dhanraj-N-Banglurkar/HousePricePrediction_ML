@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'fontawesomefree/css/all.min.css' %}" type="text/css">
+   <title>HOMEPAGE</title>
+</head>
+<body>
+    <header class="header">
+        <h1>RESIR@TE</h1>
+        <nav class="navbar">
+            <a href="{% url 'index'%}">Home</a>
+            <a href="{% url 'ba'%}">Blogs&Articles</a>
+            <a href="{% url 'aboutus'%}">About us</a>
+
+        </nav>
+        <div class="activity">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <button class="btn">
+            <a style="text-decorations:none !important; color:inherit;" href="{% url 'prediction'%}">PREDICT</a>
+        </button>
+
+    </header>
+
+        <div class="homeimage">
+            <img src="{% static 'img1.jpg'%}" alt="Image of a modern mansion">
+        </div>
+
+            <div class="homeimage-text">
+                <h2>HOUSE PRICE PREDICTOR </h2>
+                <h3>Discover the Value of Your Dream Home with Just a Click!</h3>
+            </div>
+
+            <div class="homeimage-button">
+                <button>
+                <a style="text-decorations:none !important; color:inherit;" href="{% url 'prediction'%}"> Predict Now > </a>
+                </button>
+            </div>
+
+            <div class="scroll-text">
+                <p>Unlock the power of machine learning and predict your dream home's price with precision. Welcome to our house price prediction website – where data meets intuition, and your perfect home is just a click away!</p>
+            </div>
+
+         <div class="info">
+            <h3>About Us</h3>
+            <hr color="black">
+            <p>At Home Price Predictor, we're passionate about revolutionizing the real estate industry through innovation and technology. With a team of dedicated data scientists, machine learning engineers, and real estate experts, we've created a cutting-edge platform that harnesses the power of machine learning to deliver accurate and reliable predictions of house prices</p>
+            <button>
+                <a style="text-decorations:none !important; color:inherit;" href="{% url 'aboutus'%}"> Read More > </a>
+            </button>
+            <hr color="black">
+         </div>
+
+         <div class="home-vid">
+            <video autoplay loop muted src="{% static 'vid1.mp4'%}"></video>
+
+         </div>
+
+         <div class="quote">
+            <h5>"Unlock the Future of Real Estate with the precision of Machine Learning"</h5>
+         </div>
+
+
+         <hr color="black">
+
+
+
+         <div class="features">
+            <h3>Features</h3>
+            <hr color="black">
+         </div>
+
+         <div class="boxes">
+            <div class="box1">
+                <h4>Title</h4>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vitae dicta fugit porro dolorem quis, incidunt optio voluptatibus nemo necessitatibus perferendis repellendus cupiditate unde soluta esse, delectus nostrum quibusdam explicabo!</p>
+            </div>
+
+            <div class="box2">
+                <h4>Title</h4>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vitae dicta fugit porro dolorem quis, incidunt optio voluptatibus nemo necessitatibus perferendis repellendus cupiditate unde soluta esse, delectus nostrum quibusdam explicabo!</p>
+            </div>
+
+            <div class="box3">
+                <h4>Title</h4>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vitae dicta fugit porro dolorem quis, incidunt optio voluptatibus nemo necessitatibus perferendis repellendus cupiditate unde soluta esse, delectus nostrum quibusdam explicabo!</p>
+            </div>
+         </div>
+
+
+        <div class="footer">
+            <h3>Contact Us</h3>
+            <div class="foot">
+                <h4>Let's discuss your vision with us</h4>
+                <button>
+                <a style="text-decorations:none !important; color:inherit;" href="">Let's Talk ></a>
+                </button>
+                <hr color="azure">
+            </div>
+
+
+
+            <div class="footer-right">
+                <div class="address">
+                    <p> 123, ABC Street,</p>
+                    <p> XYZ Nagar,</p>
+                    <p> City Name,</p>
+                    <p> State Name - 123456,</p>
+                    <p> India.</p>
+                </div>
+
+                <div class="email">
+                    <p> housepricepredictor.india@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="base">
+                <h2>RESIR@TE</h2>
+
+                <div class="base-elements">
+                    <a href="">About Us</a>
+                    <a href="">Project</a>
+                    <a href="">Services</a>
+                    <a href="">Terms&Conditions</a>
+                </div>
+
+                <h3>@RESIR@TE.All Rights Reserved</h3>
+            </div>
+        </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

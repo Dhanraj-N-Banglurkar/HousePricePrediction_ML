@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Price Prediction</title>
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="stylesheet" href="{% static 'fontawesomefree/css/all.min.css' %}" type="text/css">
+</head>
+<body>
+ <header class="header">
+        <h1>RESIR@TE</h1>
+        <nav class="navbar">
+            <a href="{% url 'index'%}">Home</a>
+            <a href="{% url 'ba'%}">Blogs&Articles</a>
+            <a href="{% url 'aboutus'%}">About us</a>
+
+        </nav>
+        <div class="activity">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+         <button class="btn">
+            <a style="text-decorations:none !important; color:inherit;" href="{% url 'prediction'%}">PREDICT</a>
+        </button>
+ </header>
+
+ <div class="container">
+     <div class="form-container">
+        <div class="aboutus">
+            <h1>House Price Prediction Form</h1>
+            <hr color="black" ><br>
+        </div>
+        <form action="result">
+        {% csrf_token %}
+            <label for="city"><a>Choose the city:</a></label>
+                <select id="city" name="C1">
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Bangalore">Will be added soon...</option>
+                </select>
+            <label for="location"><a>Choose the location:</a></label>
+                <select id="location" name="L1">
+                    <option value="5th Phase" disabled selected>Select a location</option>
+                    {% for location in locations %}
+                    <option value="{{ location }}">{{ location }}</option>
+                    {% empty %}
+                    <option value="" disabled selected>No locations found</option>
+                    {% endfor %}
+                </select>
+
+            <label for="amenities-list"><a>Choose amenities:</a></label>
+                <ul id="amenities-list">
+                    <li><input type="checkbox" id="amenity1" name="a1" value="0" ><label for="amenity1">Resale</label></li>
+                    <li><input type="checkbox" id="amenity2" name="a2" value="0" ><label for="amenity2">Furnished</label></li>
+                    <li><input type="checkbox" id="amenity9" name="a9" value="0" ><label for="amenity9">Vaastu</label></li>
+                    <li><input type="checkbox" id="amenity3" name="a3" value="0" ><label for="amenity3">School</label></li>
+                    <li><input type="checkbox" id="amenity6" name="a6" value="0"  ><label for="amenity6">Hospital</label></li>
+                    <li><input type="checkbox" id="amenity4" name="a4" value="0" ><label for="amenity4">Security</label></li>
+                    <li><input type="checkbox" id="amenity5" name="a5" value="0" ><label for="amenity5">Parking</label></li>
+                    <li><input type="checkbox" id="amenity7" name="a7" value="0" ><label for="amenity7">Play Area</label></li>
+                    <li><input type="checkbox" id="amenity8" name="a8" value="0" ><label for="amenity8">Lift</label></li>
+                </ul>
+                <p id="selected-amenities-count">Selected amenities: 0</p>
+            <div class="square-feet-container">
+                <label class="square-feet-label" for="square-feet"><a>Enter the square feet:</a></label>
+                <input type="number" id="square-feet" class="square-feet-input" min="100" max="5000" name="L2" value="800">
+            </div>
+            <div class="square-feet-container">
+                <label class="square-feet-label" for="bhk"><a>Enter the Bhk:</a></label>
+                <input type="number" id="bhk" class="square-feet-input" max="5" name="L3" value="1">
+            </div>
+            <div class="button-container">
+                <button type="reset" class="reset-btn">Reset</button>
+                <button type="submit" value="Submit" class="submit-btn">Predict</button>
+            </div>
+        </form>
+        <form>
+            <div class="row">
+                <br>
+                <h2>{{ result2 }}</h2>
+            </div>
+
+        </form>
+        <br>
+     </div>
+ </div>
+ <div class="footer">
+            <h3>Contact Us</h3>
+            <div class="foot">
+                <h4>Let's discuss your vision with us</h4>
+                <button>
+                <a style="text-decorations:none !important; color:inherit;" href="">Let's Talk ></a>
+                </button>
+                <hr color="azure">
+            </div>
+
+            <div class="footer-right">
+                <div class="address">
+                    <p> 123, ABC Street,</p>
+                    <p> XYZ Nagar,</p>
+                    <p> City Name,</p>
+                    <p> State Name - 123456,</p>
+                    <p> India.</p>
+                </div>
+
+                <div class="email">
+                    <p> housepricepredictor.india@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="base">
+                <h2>RESIR@TE</h2>
+
+                <div class="base-elements">
+                    <a href="">About Us</a>
+                    <a href="">Project</a>
+                    <a href="">Services</a>
+                    <a href="">Terms&Conditions</a>
+                </div>
+
+                <h3>@RESIR@TE.All Rights Reserved</h3>
+            </div>
+ </div>
+
+<!-- <script src="{% static 'script.js'%}"></script>-->
+</body>
+</html>

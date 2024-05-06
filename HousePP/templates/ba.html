@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'fontawesomefree/css/all.min.css' %}" type="text/css">
+    <title>BLOGS AND ARTICLES PAGE</title>
+</head>
+<body>
+    <header class="header">
+        <h1>RESIR@TE</h1>
+        <nav class="navbar">
+            <a href="{% url 'index'%}">Home</a>
+            <a href="{% url 'ba'%}">Blogs&Articles</a>
+            <a href="{% url 'aboutus'%}">About us</a>
+
+        </nav>
+        <div class="activity">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <button class="btn">
+            <a style="text-decorations:none !important; color:inherit;" href="{% url 'prediction'%}">PREDICT</a>
+        </button>
+
+    </header>
+
+    <div class="aboutus">
+        <h2>Blogs&Articles</h2>
+        <hr color="black" >
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Mumbais Real Estate Regulatory Authority (RERA):</h2>
+            <h5> A Guide for Buyers and Sellers, Apr 13, 2024</h5>
+            <div class="fakeimg1">
+                <img src="{% static 'fakeimg.jpg'%}" alt="">
+            </div>
+            <br>
+            <p>The Mumbai real estate market  has shown robust growth in the past year and continues to be the biggest in the country. The high reality prices, increase in stamp duty and registration costs, and high rates on housing loans have not deterred the interest of home buyers and investors. A crucial factor for this demand is the rapid city-wide infrastructure development and construction to offer seamless connectivity to every corner of the MMR (Mumbai Metropolitan Region). The big real estate tycoons in Mumbai offer various types of properties, from luxury homes to more affordable ones. The prices of properties can vary depending on their location. South Mumbai has the most expensive properties, and prices decrease as you move north into the suburbs.</p>
+            <br>
+            <p>The five factors to consider before investing in Mumbai are discussed below.</p>
+            <br>
+            <p>Budget Planning</p>
+            <br>
+            <p>Before you start looking for a home, figure out your budget. This will help you narrow down your options based on location, size, and amenities. Consider additional costs like registration and documentation fees. If youre thinking of getting a loan, make sure you and your spouse are eligible for loans with lucrative interest rates and other perks. Proper planning of the finances with details of income vs expenditure on paper will streamline the buying process and make sure you dont face problems with repayment.</p>
+          </div>
+          <div class="card">
+            <h2>5 Attributes To Factor In Before Investing In A Home In Mumbai</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg2">
+                <img src="{% static 'fakeimg1.jpg'%}" alt="">
+            </div>
+            <br>
+            <p>RERA or Real Estate Regulation and Development Act is a regulatory authority for the real estate industry. The laws in the act have laid down standard rules for the sale and purchase of properties which must be mandatorily followed by developers and builders in Mumbai. They act as a guide for property buyers to bring transparency to the property buying process. The act came into effect in May 2017 with guidelines designed to save homebuyers from fraudulent practices and boost investment in Mumbai real estate...</p>\
+            <br>
+            <p>RERA registration</p>
+            <br>
+            <p>Under the RERA every builder and developer has to mandatorily register their residential or commercial properties if the total land area being developed is more than 500 square meters or the total number of units is greater than 8. The builder cannot market or sell his properties if it not registered with the RERA authorities. All the details of the project need to be disclosed in the public domain by uploading on the official RERA website.</p>
+            <br>
+            <p>Advance Payments</p>
+            <br>
+            <p>Under RERA guidelines, the builder cannot demand more than 10% advance of the property value. The builder must enter into a written agreement with the buyer for additional payments for any property in Mumbai.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Us</h2>
+            <div class="fakeimg3">
+                <img src="{% static 'img3.jpg'%}" alt="">
+            </div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+          </div>
+        </div>
+    </div>
+
+      <div class="footer">
+        <h3>Contact Us</h3>
+        <div class="foot">
+            <h4>Let's discuss your vision with us</h4>
+            <button onclick="">Let's Talk ></button>
+            <hr color="azure">
+        </div>
+
+        <div class="footer-right">
+            <div class="address">
+                <p> 123, ABC Street,</p>
+                <p> XYZ Nagar,</p>
+                <p> City Name,</p>
+                <p> State Name - 123456,</p>
+                <p> India.</p>
+            </div>
+
+            <div class="email">
+                <p> housepricepredictor.india@gmail.com</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+
+        <div class="base">
+            <h2>RESIR@TE</h2>
+
+            <div class="base-elements">
+                <a href="{% url 'aboutus'%}">About Us</a>
+                <a href="">Project</a>
+                <a href="">Services</a>
+                <a href="">Terms&Conditions</a>
+            </div>
+
+            <h3>@RESIR@TE.All Rights Reserved</h3>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
