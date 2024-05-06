@@ -22,9 +22,9 @@ This project is licensed under the WIEECT.
 
 ## Authors
 * **Dhanraj Bamnglurkar** - *ML_Model work & Django Framework* - Dhanraj-N-Banglurkar
-  **Sarthak Gawai** - *Frontend work* -
-  **Vivek Chauhan** - *Research work* -
-  **Aryan  Balani** - *Research work* -
+* **Sarthak Gawai** - *Frontend work* -
+* **Vivek Chauhan** - *Research work* -
+* **Aryan  Balani** - *Research work* -
 
 ## Acknowledgments
 * Hat tip to the following 
