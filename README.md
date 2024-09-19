@@ -6,7 +6,7 @@ The goal is to build a model that can accurately predict the price of a house ba
 a set of features, such as the number of bedrooms, location, square footage, and more.
 
 ## Copyright
-Copyright (c) 2024 Dhanraj Banglurkar
+Copyright (c) 2024 Dhanraj Banglurkar & team 
 All rights reserved.
 
 ## License
