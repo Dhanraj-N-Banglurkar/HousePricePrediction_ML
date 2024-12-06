@@ -21,10 +21,10 @@ This project is licensed under the WIEECT.
 * Html5, css, js - Frontend Development.
 
 ## Authors
-* **Dhanraj Bamnglurkar** - *ML_Model work & Django Framework*
-* **Sarthak Gawai** - *Frontend work* 
-* **Vivek Chauhan** - *Research work* 
-* **Aryan  Balani** - *Research work* 
+* **Dhanraj Bamnglurkar** - *Django Framework & ML_Model Development*
+* **Sarthak Gawai** - *Frontend Development* 
+* **Vivek Chauhan** - *Research work & Assisted Frontend Development* 
+* **Aryan  Balani** - *Research work & Assisted Backend Development* 
 
 ## Acknowledgments
 * Hat tip to the following 
